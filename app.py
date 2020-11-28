@@ -16,5 +16,5 @@ connect_db(app)
 
 @app.route('/')
 def home_page():
-    pet=Pet.query.all()
-    return render_template('home.html', pet=pet)
+    pets=Pet.query.all()
+    return render_template('home.html', pets=pets)
